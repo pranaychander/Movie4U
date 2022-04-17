@@ -64,6 +64,7 @@
 		8DA72A78280C475300E8236C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA72A77280C475300E8236C /* NetworkError.swift */; };
 		8DA72A7A280C478A00E8236C /* NetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA72A79280C478A00E8236C /* NetworkManagerProtocol.swift */; };
 		8DA72A7C280C48BD00E8236C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA72A7B280C48BD00E8236C /* NetworkManager.swift */; };
+		8DA72A83280C678400E8236C /* AppErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA72A82280C678400E8236C /* AppErrors.swift */; };
 		E63ADAC5B30D618F7A32F739 /* Pods_Movie4U.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4DBE58F2F9CF664EE89333 /* Pods_Movie4U.framework */; };
 /* End PBXBuildFile section */
 
@@ -160,6 +161,7 @@
 		8DA72A77280C475300E8236C /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		8DA72A79280C478A00E8236C /* NetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocol.swift; sourceTree = "<group>"; };
 		8DA72A7B280C48BD00E8236C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		8DA72A82280C678400E8236C /* AppErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppErrors.swift; sourceTree = "<group>"; };
 		8DB103906C180A2D9666B0E9 /* Pods-Movie4UTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movie4UTests.debug.xcconfig"; path = "Target Support Files/Pods-Movie4UTests/Pods-Movie4UTests.debug.xcconfig"; sourceTree = "<group>"; };
 		947290881E97C452EB5DF28E /* Pods-Movie4U.review release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movie4U.review release.xcconfig"; path = "Target Support Files/Pods-Movie4U/Pods-Movie4U.review release.xcconfig"; sourceTree = "<group>"; };
 		9F4DBD1E3075FFDB76FCD394 /* Pods-Movie4U.unstable debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movie4U.unstable debug.xcconfig"; path = "Target Support Files/Pods-Movie4U/Pods-Movie4U.unstable debug.xcconfig"; sourceTree = "<group>"; };
@@ -322,6 +324,7 @@
 		8D318AFF27DE0F5F0085F3FE /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				8DA72A81280C677600E8236C /* Errors */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -629,6 +632,14 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
+		8DA72A81280C677600E8236C /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				8DA72A82280C678400E8236C /* AppErrors.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -888,6 +899,7 @@
 				8DA72A78280C475300E8236C /* NetworkError.swift in Sources */,
 				8DA72A66280B442000E8236C /* FavouritesTabContainer.swift in Sources */,
 				8D318B4B27DF129B0085F3FE /* MainTabViewModel.swift in Sources */,
+				8DA72A83280C678400E8236C /* AppErrors.swift in Sources */,
 				8D318B4027DF0E3B0085F3FE /* LoginViewController.swift in Sources */,
 				8DA72A72280C429800E8236C /* APIDataProtocol.swift in Sources */,
 				8DA72A76280C441E00E8236C /* APIClientProtocol.swift in Sources */,
