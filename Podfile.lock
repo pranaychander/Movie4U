@@ -1,0 +1,68 @@
+PODS:
+  - Alamofire (5.4.4)
+  - Kingfisher (7.0.0)
+  - Nimble (9.2.1)
+  - OHHTTPStubs/Core (9.1.0)
+  - OHHTTPStubs/Default (9.1.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (9.1.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (9.1.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (9.1.0)
+  - OHHTTPStubs/Swift (9.1.0):
+    - OHHTTPStubs/Default
+  - PureLayout (3.1.9)
+  - R.swift (5.4.0):
+    - R.swift.Library (~> 5.3.0)
+  - R.swift.Library (5.3.0)
+  - SkeletonView (1.25.2)
+  - SwiftFormat/CLI (0.48.18)
+  - SwiftLint (0.43.1)
+  - Swinject (2.7.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.4.3)
+  - Kingfisher (~> 7.0.0)
+  - Nimble (~> 9.2.1)
+  - OHHTTPStubs/Swift
+  - PureLayout (~> 3.1.8)
+  - R.swift (~> 5.4.0)
+  - SkeletonView (~> 1.25.2)
+  - SwiftFormat/CLI (~> 0.48.4)
+  - SwiftLint (~> 0.43.1)
+  - Swinject (~> 2.7.1)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Kingfisher
+    - Nimble
+    - OHHTTPStubs
+    - PureLayout
+    - R.swift
+    - R.swift.Library
+    - SkeletonView
+    - SwiftFormat
+    - SwiftLint
+    - Swinject
+
+SPEC CHECKSUMS:
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  Kingfisher: 5efc54fec3980f92354898532e562cc17f31efb4
+  Nimble: e7e615c0335ee4bf5b0d786685451e62746117d5
+  OHHTTPStubs: 90eac6d8f2c18317baeca36698523dc67c513831
+  PureLayout: 5fb5e5429519627d60d079ccb1eaa7265ce7cf88
+  R.swift: c533450b0f7dc494e0993f5f1a1db925d84c3006
+  R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
+  SkeletonView: 820b2bbd180d7408f3f03b6462cfc3cac39d2ef2
+  SwiftFormat: 7dd2b33a0a3d61095b61c911b6d89ff962ae695c
+  SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
+  Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
+
+PODFILE CHECKSUM: 6eae29f614447bd001283995eea47c4f3f2683bc
+
+COCOAPODS: 1.11.2
