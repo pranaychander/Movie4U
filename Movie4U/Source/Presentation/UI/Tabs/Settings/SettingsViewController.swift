@@ -6,3 +6,17 @@
 //
 
 import Foundation
+import UIKit
+
+protocol SettingsViewControllerDelegate: AnyObject {
+    
+}
+
+class SettingsViewController: UIViewController {
+    weak var parentingCoordinator: SettingsViewControllerDelegate?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .yellow
+    }
+}

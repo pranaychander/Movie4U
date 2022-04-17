@@ -6,3 +6,17 @@
 //
 
 import Foundation
+import UIKit
+
+protocol FavouritesViewControllerDelegate: AnyObject {
+    
+}
+
+class FavouritesViewController: UIViewController {
+    weak var parentingCoordinator: HomeViewControllerDelegate?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .systemPink
+    }
+}

@@ -6,3 +6,17 @@
 //
 
 import Foundation
+import UIKit
+
+protocol HomeViewControllerDelegate: AnyObject {
+    
+}
+
+class HomeViewController: UIViewController {
+    weak var parentingCoordinator: HomeViewControllerDelegate?
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .white
+    }
+}
+

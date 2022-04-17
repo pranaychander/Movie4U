@@ -39,7 +39,7 @@ extension AppLogger {
         return formattedArgs
     }
     
-    static func log(level: LogLevel, args logArgs: [Any] = [], file: String = #file, function: String = #function, line: Int = #line) {
+    static func log(level: LogLevel, args logArgs: Any..., file: String = #file, function: String = #function, line: Int = #line) {
         let logMessage: String = "\(level.rawValue) [\(file)] --> \(function) Line: \(line) --> \(self.format(args: logArgs))"
         switch level {
         case .error:
@@ -55,5 +55,24 @@ extension AppLogger {
         case .severe:
             logger.fault("\(logMessage)")
         }
+    }
+}
+
+extension AppLogger {
+    static func memoryInitLog(file: String = #file) {
+        let fileName = (file as NSString).lastPathComponent
+        let className = getClassName(forFileName: fileName)
+        logger.debug(".... \(className) init")
+    }
+    
+    static func memoryDeinitLog(file: String = #file) {
+        let fileName = (file as NSString).lastPathComponent
+        let className = getClassName(forFileName: fileName)
+        logger.debug(".... \(className) deinit")
+    }
+    
+    private static func getClassName(forFileName fileName: String) -> String {
+        let className = fileName.replacingOccurrences(of: ".swift", with: "")
+        return className
     }
 }
