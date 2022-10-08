@@ -33,6 +33,8 @@ extension LoginCoordinator: LoginViewControllerDelegate {
     func onLogin() {
         parentingCoordinator?.finishLoginFlow()
     }
+    func onSignUp() {
+    }
 }
 
 func getLoginTearDown() -> LoginTearDown {

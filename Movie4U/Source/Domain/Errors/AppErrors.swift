@@ -13,5 +13,6 @@ enum AppErrors: Error {
     case clientError
     case serviceDown
     case unknownError
+    case dataUnavailable
 }
 

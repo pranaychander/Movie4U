@@ -35,7 +35,7 @@ enum HTTPHeaderKeys: String {
 }
 
 public struct RequestParams {
-    let urlParams: [String: String]?
+    var urlParams: [String: String]?
     let bodyParams: [String: Any]?
     let contentType: HeaderContentType
     

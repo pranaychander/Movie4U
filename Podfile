@@ -6,6 +6,7 @@ target 'Movie4U' do
   use_frameworks!
 
   # Pods for Movie4U
+  pod 'SkyFloatingLabelTextField', '~> 3.0'
   pod 'Swinject', '~> 2.7.1'
   pod 'Alamofire', '~> 5.4.3'
   pod 'Kingfisher', '~> 7.0.0'

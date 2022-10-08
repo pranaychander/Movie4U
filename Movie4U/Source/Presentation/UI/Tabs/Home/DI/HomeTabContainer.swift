@@ -24,12 +24,20 @@ class HomeTabContainer: ChildContainer {
             UINavigationController()
         }.inObjectScope(.globalScope)
         
+        container.register(MoviesRepositoryImpl.self) { res in
+            MoviesRepositoryImpl(apiClient: res.resolve(APIClient.self)!)
+        }.inObjectScope(.flowScope)
+        
+        container.register(GetPopularMoviesUseCase.self) { res in
+            GetPopularMoviesUseCase(moviesRepository: res.resolve(MoviesRepositoryImpl.self)!)
+        }.inObjectScope(.flowScope)
+                
         container.register(HomeViewModel.self) { res in
-            return HomeViewModel()
+            return HomeViewModel(getPopularMoviesUseCase: res.resolve(GetPopularMoviesUseCase.self)!)
         }.inObjectScope(.flowScope)
         
         container.register(HomeViewController.self) { res in
-            HomeViewController()
+            HomeViewController(viewModel: res.resolve(HomeViewModel.self)!)
         }.inObjectScope(.flowScope)
     }
 }

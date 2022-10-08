@@ -36,6 +36,8 @@ class DependencyManager {
             return sharedInstance.appContainer.authContainer.container
         case .main:
             return sharedInstance.appContainer.mainTabContainer.container
+        case .home:
+            return sharedInstance.appContainer.mainTabContainer.homeTabContainer.container
         }
     }
 }
@@ -44,4 +46,5 @@ enum ContainerType: CaseIterable {
     case app
     case auth
     case main
+    case home
 }

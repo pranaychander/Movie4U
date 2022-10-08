@@ -33,7 +33,7 @@ private extension NetworkManager {
     private func createURLRequest(apiData: APIData, basePath: String) throws -> URLRequest {
         do {
             if let url = URL(string: apiData.absolutePath(from: basePath))  {
-                
+                AppLogger.log(level: .verbose, args: "Request URL is ", url.absoluteString)
                 var urlRequest = URLRequest(url: url)
                 urlRequest.httpMethod = apiData.method.rawValue
                 self.addRequestHeaders(request: &urlRequest, requestHeaders: apiData.headers)

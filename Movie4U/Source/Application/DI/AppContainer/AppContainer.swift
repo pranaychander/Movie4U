@@ -50,6 +50,10 @@ class AppContainer {
                                   loginTearDown: getLoginTearDown(),
                                   mainTabTearDown: getMainTabTearDown())
         }.inObjectScope(.globalScope)
+        
+        rootContainer.register(APIClient.self) { res in
+            APIClient()
+        }.inObjectScope(.globalScope)
     }
 }
 

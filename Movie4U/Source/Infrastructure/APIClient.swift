@@ -16,7 +16,7 @@ class APIClient: APIClientProtocol {
     
     func fetch<T: Codable>(request: APIData, keyDecodingStrategy: JSONDecoder.KeyDecodingStrategy, completionHandler: @escaping ((Result<T, NetworkError>) -> Void)) {
         self.authManager.startRequest(request: request, basePath: request.basePath) { (data, response, error) in
-            
+            AppLogger.log(level: .error, args: error)
             if let _ = error{
                 let errorType = NetworkError.failed
                 completionHandler(.failure(errorType))

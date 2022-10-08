@@ -26,7 +26,8 @@ class HomeTabCoordinator: NavigationCoordinator {
     }
     
     func runFlow() {
-        let homeViewController = HomeViewController()
+        let homeViewModel = DependencyManager.getContainer(.home).resolve(HomeViewModel.self)!
+        let homeViewController = HomeViewController(viewModel: homeViewModel)
         navigationController.show(homeViewController, sender: nil)
     }
 }
